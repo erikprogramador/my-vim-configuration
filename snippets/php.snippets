@@ -1,0 +1,63 @@
+snippet met
+	${1:public} function ${2}()
+	{
+		${3}
+	}
+
+snippet _c
+	public function __construct(${1})
+	{
+		${2}
+	}
+
+snippet smet
+	${1:public} static function ${2}()
+	{
+		${3}
+	}
+
+snippet route
+	Route::${1}('${2}', '${3}');
+
+snippet func
+	function ($1) {
+		${2}
+	}
+
+snippet vardie
+	var_dump(${1:expression}); die();
+
+snippet pclass
+	<?php
+	declare(strict_types=1);
+
+	namespace ${1};
+
+	class ${2}
+	{
+		${3}
+	}
+
+snippet testclass
+	<?php
+	declare(strict_types=1);
+
+	namespace ${1};
+
+	class ${2} extends ${3:TestCase,}${4:PHPUnit_Framework_TestCase}
+	{
+		${5}
+	}
+
+snippet test
+	/** @test */
+	function ${1:it_}()
+	{
+		${2}
+	}
+
+snippet be
+	{{ ${1} }}
+
+snippet csrf
+	{{ csrf_field() }}

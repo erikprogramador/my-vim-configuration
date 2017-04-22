@@ -13,7 +13,6 @@ Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
 Plugin 'jwalton512/vim-blade'
 Plugin 'posva/vim-vue'
 Plugin 'tpope/vim-surround'
@@ -24,6 +23,9 @@ Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
 Plugin 'SirVer/ultisnips'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'garbas/vim-snipmate'
+Plugin 'editorconfig/editorconfig-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

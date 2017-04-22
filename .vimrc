@@ -11,6 +11,7 @@ set linespace=25
 set splitbelow
 set splitright
 set foldcolumn=2
+set autowrite
 hi LineNr ctermbg=bg
 hi foldcolumn ctermbg=bg
 hi vertsplit ctermbg=bg ctermfg=bg
@@ -37,9 +38,9 @@ let g:php_cs_fixer_level = "psr2"
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 nnoremap ,d :call pdv#DocumentWithSnip()<CR>
 
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<tab-d>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
@@ -55,6 +56,11 @@ nnoremap ,pf :call PhpCsFixerFixFile()<CR>
 augroup autosourcing
     autocmd!
     autocmd BufWritePost .vimrc source %
+augroup END
+
+augroup trailing
+    autocmd!
+    autocmd BufWritePre *.py :%s/\s\+$//e
 augroup END
 
 function! GoyoAfter()

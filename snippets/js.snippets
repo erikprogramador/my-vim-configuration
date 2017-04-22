@@ -15,14 +15,14 @@ snippet js
 
 snippet func
 	function ${1} (${2}) {
-		${3}	
+		${3}
 	}
 
 snippet import
 	import ${1} from '${2}'
 
 snippet met
-	${1} ($2) {
+	${1} (${2}) {
 		${3}
 	}
 
@@ -43,13 +43,16 @@ snippet comp
 snippet scomp
 	import React from 'react'
 
-	const $1 = () => (
+	const ${1} = () => (
 		<div></div>
 	)
 
-	export default $1
+	export default ${1}
 
 snippet af
 	(${1}) => {
 		${2}
 	}
+
+snippet log
+	console.log(${1})

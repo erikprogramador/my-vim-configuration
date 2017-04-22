@@ -1,0 +1,1 @@
+/home/erikprogramador/.vim/plugins.vim

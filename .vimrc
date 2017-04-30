@@ -23,6 +23,7 @@ nmap ,f :tag<space>
 nmap ,ct :!ctags -R --exclude=.git --exclude=node_modules<cr>
 vmap ,su ! awk '{print length(), $0 \| "sort -n \| cut -d \" \" -f2-" }'<cr>
 nmap ,t :!vendor/bin/phpunit<cr>
+nmap ,tf :!vendor/bin/phpunit %<cr>
 nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>

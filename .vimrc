@@ -1,4 +1,5 @@
 colorscheme atom-dark-256
+set shell=/bin/zsh
 set nonumber
 set autoindent
 set tabstop=4
@@ -22,8 +23,10 @@ nmap ,es :e ~/.vim/snippets/
 nmap ,f :tag<space>
 nmap ,ct :!ctags -R --exclude=.git --exclude=node_modules<cr>
 vmap ,su ! awk '{print length(), $0 \| "sort -n \| cut -d \" \" -f2-" }'<cr>
-nmap ,t :!vendor/bin/phpunit<cr>
-nmap ,tf :!vendor/bin/phpunit %<cr>
+nmap ,t :!clear && vendor/bin/phpunit<cr>
+nmap ,tf :!clear && vendor/bin/phpunit %<cr>
+nmap ,tm yiw:!clear && vendor/bin/phpunit --filter <C-R>"<cr>
+nmap ,td :!clear && vendor/bin/phpunit --testdox<cr>
 nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>

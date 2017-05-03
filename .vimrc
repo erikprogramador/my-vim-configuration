@@ -27,6 +27,7 @@ nmap ,t :!clear && vendor/bin/phpunit<cr>
 nmap ,tf :!clear && vendor/bin/phpunit %<cr>
 nmap ,tm yiw:!clear && vendor/bin/phpunit --filter <C-R>"<cr>
 nmap ,td :!clear && vendor/bin/phpunit --testdox<cr>
+nmap ,dk :!clear && php artisan dusk<cr>
 nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>

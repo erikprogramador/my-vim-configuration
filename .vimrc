@@ -95,5 +95,28 @@ endif
 "---------------------Vundle--------------"
 set nocompatible              " be iMproved, required
 
-so ~/.vim/plugins.vim
+so ~/.vim/plugins.vim         " Source the plugins file
+
+"---------------------Vundle--------------"
+
+" m                 Manage files on the NerdTree
+" ,d                Create comment to a method
+" -                 Show content folder
+" d                 Create a new directory
+" CTRL + w + |      Expand a split
+" CTRL + w + =      Make the splits equals
+" D                 Delete a file or directory
+" %                 Create a new file
+" zc                Close a block of code
+" za                Open a block of code
+" ds                Delete surround
+" dst               Delete surround tag
+" cst               Change surround tag
+" S (Capital)       Surround
+" CTRL + ]          Go to method definition
+" :ls               Show buffer list
+" :b $buffernum     Go to the buffer
+" 0                 Start of line
+" $                 End of line
+" dat               Delete a tag
 

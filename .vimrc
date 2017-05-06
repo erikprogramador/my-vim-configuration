@@ -1,4 +1,4 @@
-colorscheme atom-dark-256
+colorscheme hybrid_reverse
 set shell=/bin/zsh
 set nonumber
 set autoindent
@@ -16,6 +16,8 @@ set autowrite
 hi LineNr ctermbg=bg
 hi foldcolumn ctermbg=bg
 hi vertsplit ctermbg=bg ctermfg=bg
+
+let g:enable_bold_font=1
 
 "---------------------Mappings--------------"
 nmap ,ev :tabedit $MYVIMRC<cr>

@@ -26,6 +26,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'garbas/vim-snipmate'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'kristijanhusak/vim-hybrid-material'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

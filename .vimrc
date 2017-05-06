@@ -32,6 +32,7 @@ nmap <C-J> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
+nmap <F7> mzgg=G`z`
 
 "---------------------Plugins--------------"
 let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'

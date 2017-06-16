@@ -36,6 +36,9 @@ nmap <C-H> <C-W><C-H>
 nmap <C-L> <C-W><C-L>
 nmap <F7> mzgg=G`z`
 
+vmap ,cm :'<,'>norm i//<cr>
+vmap ,cum :'<,'>norm xx<cr>
+
 "---------------------Plugins--------------"
 let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
 
@@ -100,7 +103,7 @@ set nocompatible              " be iMproved, required
 
 so ~/.vim/plugins.vim         " Source the plugins file
 
-"---------------------Vundle--------------"
+"---------------------Helpers--------------"
 
 " m                 Manage files on the NerdTree
 " ,d                Create comment to a method

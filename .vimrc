@@ -1,4 +1,4 @@
-colorscheme hybrid_reverse
+colorscheme hybrid_material
 set shell=/bin/zsh
 set nonumber
 set autoindent
@@ -38,6 +38,11 @@ nmap <F7> mzgg=G`z`
 
 vmap ,cm :'<,'>norm i//<cr>
 vmap ,cum :'<,'>norm xx<cr>
+
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
 
 "---------------------Plugins--------------"
 let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
